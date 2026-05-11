@@ -20,21 +20,26 @@ class LoginAreaForm extends StatelessWidget {
     required this.textFinalButton,
     required this.path,
   });
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 150),
+          const SizedBox(height: 150),
+
           CardContainer(
             child: Column(
               children: [
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
+
                 Text(
                   textTile,
                   style: Theme.of(context).textTheme.headlineLarge,
                 ),
-                SizedBox(height: 10),
+
+                const SizedBox(height: 10),
+
                 ChangeNotifierProvider(
                   create: (_) => LoginFormProvider(),
                   child: LoginForm(
@@ -43,10 +48,19 @@ class LoginAreaForm extends StatelessWidget {
                     loginRegister: loginRegister,
                   ),
                 ),
+
                 TextButton(
                   onPressed: () => Navigator.pushNamed(context, path),
                   child: Text(textFinalButton),
                 ),
+
+                if (loginRegister == 1)
+                  TextButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'forgot_password');
+                    },
+                    child: const Text('¿Olvidaste tu contraseña?'),
+                  ),
               ],
             ),
           ),

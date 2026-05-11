@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/providers/cart_provider.dart';
 import 'package:flutter_application_1/routes/app_routes.dart';
 import 'package:flutter_application_1/services/product_service.dart';
 import 'package:flutter_application_1/themes/my_theme.dart';
@@ -20,6 +21,7 @@ class AppState extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ProductService()),
         ChangeNotifierProvider(create: (_) => CategoryServices()),
         ChangeNotifierProvider(create: (_) => ProviderServices()),
+        ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: MainApp(),
     );

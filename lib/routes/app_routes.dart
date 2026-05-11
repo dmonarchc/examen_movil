@@ -3,6 +3,8 @@ import 'package:flutter_application_1/screens/categories/edit_category_screen.da
 import 'package:flutter_application_1/screens/categories/list_category_screen.dart';
 import 'package:flutter_application_1/screens/providers/edit_provider_screen.dart';
 import 'package:flutter_application_1/screens/providers/list_provider_screen.dart';
+import 'package:flutter_application_1/screens/forgot_password_screen.dart';
+import 'package:flutter_application_1/screens/cart/cart_screen.dart';
 import '../screens/screen.dart';
 
 class AppRoutes {
@@ -17,6 +19,8 @@ class AppRoutes {
     'edit_provider': (BuildContext context) => const EditProviderScreen(),
     'list_category': (BuildContext context) => const ListCategoryScreen(),
     'edit_category': (BuildContext context) => const EditCategoryScreen(),
+    'cart': (BuildContext context) => const CartScreen(),
+    'forgot_password': (BuildContext context) => const ForgotPasswordScreen(),
     'error': (BuildContext context) => const ErrorScreen(),
   };
 
