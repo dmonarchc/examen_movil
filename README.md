@@ -17,6 +17,8 @@ La aplicación permite administrar:
 - Productos
 - Categorías
 - Proveedores
+- Carrito de compras simulado
+- Recuperación de contraseña simulada
 
 Cada módulo incluye operaciones CRUD:
 
@@ -67,6 +69,7 @@ Se utilizó `Provider` para:
 - Formularios
 - Actualización reactiva de listas
 - Manejo de carga
+- Carrito de compras
 
 ---
 
@@ -137,27 +140,26 @@ flutter run
 
 ---
 
-# Capturas
+# Funcionalidades simuladas
 
-## Productos
+Debido a que el backend no dispone de endpoints específicos para ciertas funcionalidades, se implementaron simulaciones locales en Flutter.
 
-- Listado de productos
-- Edición de productos
-- Eliminación de productos
+## Carrito de compras
 
-## Categorías
+- Agregar productos
+- Aumentar/disminuir cantidades
+- Calcular total
+- Simular compra
 
-- CRUD completo de categorías
+## Recuperación de contraseña
 
-## Proveedores
-
-- CRUD completo de proveedores
+- Ingreso de correo electrónico
+- Simulación de envío de correo
+- Navegación integrada desde login
 
 ---
 
 # Mejoras realizadas
-
-Durante el desarrollo se realizaron mejoras adicionales:
 
 - Corrección de layouts Flutter
 - Optimización de navegación
@@ -165,6 +167,8 @@ Durante el desarrollo se realizaron mejoras adicionales:
 - Refactor de widgets
 - Corrección de inconsistencias del backend (`providerid` vs `provider_id`)
 - Mejora visual de tarjetas y formularios
+- Implementación de carrito de compras local
+- Implementación de recuperación de contraseña simulada
 
 ---
 
